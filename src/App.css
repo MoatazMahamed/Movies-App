@@ -3,11 +3,11 @@ body {
 }
 .color-body {
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
 }
 .nav-style {
   height: 90px;
-  width: 1440px;
+  width: 100%;
   background-color: #b45b35;
 }
 
@@ -132,3 +132,173 @@ body {
 }
 
 
+
+
+/* Responsive */
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  .nav-style {
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 55px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .search input {
+    height: 35px;
+    margin-top: 10px;
+  }
+  
+  .search .fa-search {
+    top: 20px;
+  }
+  
+  .card {
+    height: 300px;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  
+  .card-detalis {
+    height: auto;
+    padding: 15px;
+  }
+  
+  .img-movie {
+    height: auto;
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .card-text-details {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .card-text-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .card-text-story {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .pagination-container {
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .pagination {
+    margin-bottom: 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-style {
+    height: auto;
+    padding: 15px 0;
+  }
+  
+  .logo {
+    height: 60px;
+    width: 65px;
+  }
+  
+  .card {
+    height: 320px;
+  }
+  
+  .card-detalis {
+    height: auto;
+    padding: 20px;
+  }
+  
+  .img-movie {
+    height: auto;
+    max-height: 320px;
+  }
+  
+  .card-text-details {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  
+  .card-text-title {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-style {
+    height: 80px;
+  }
+  
+  .card {
+    height: 340px;
+  }
+  
+  .card-detalis {
+    height: auto;
+  }
+  
+  .img-movie {
+    height: 320px;
+  }
+  
+  .card-text-details {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav-style {
+    height: 85px;
+  }
+  
+  .card {
+    height: 350px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .nav-style {
+    height: 90px;
+  }
+}
+
+/* Custom utility classes for responsive design */
+.w-md-30 {
+  width: 30%;
+}
+
+@media (max-width: 767.98px) {
+  .w-md-30 {
+    width: 100%;
+  }
+}
+
+/* Fix for movie details page on mobile */
+@media (max-width: 576px) {
+  .card-detalis, .card-story {
+    margin: 0 10px;
+  }
+  
+  .btn {
+    margin-bottom: 10px;
+  }
+}
